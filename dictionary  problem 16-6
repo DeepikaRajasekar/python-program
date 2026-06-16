@@ -1,0 +1,8 @@
+fruits=["mango","apple","mango","orange","mango","orange"]
+res={}
+for i in fruits:
+    if i not in res:
+        res[i]=1
+    else:
+        res[i]+=1
+print(res)
