@@ -1,0 +1,5 @@
+names=["tom","jennifer","ali","chris"]
+res={}
+for i in names:
+    res[i]=len(i)
+print(res)
