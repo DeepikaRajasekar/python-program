@@ -1,0 +1,16 @@
+num = int(input("Enter a number: "))
+original = num
+isdivisible = True
+while num > 0:
+    digit = num % 10
+    if digit == 0:
+        isdivisible = False
+        break
+    if original % digit != 0:
+        isdivisible = False
+        break
+    num = num // 10
+if isdivisible:
+    print("All digits divide the number")
+else:
+    print("Not all digits divide the number")
